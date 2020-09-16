@@ -8,15 +8,15 @@
     <link rel="stylesheet" href="style.css" />
     <script src="/js/uikit.min.js"></script>
     <script src="/js/uikit-icons.min.js"></script>
-    <title>naverApi</title>
+    <title>FIND IMAGE</title>
 </head>
 <body>
     <!-- guid -->
     <div id="my-guid" uk-modal>
         <div class="uk-modal-dialog uk-modal-body">
             <button class="uk-modal-close-default" type="button" uk-close></button>
-            <h2 class="uk-modal-title">FING IMG 이용 안내</h2>
-            <p>돋보기 클릭 후 원하는 사진 이름을 검색합니다. 검색 결과를 클릭하면 이미지가 업로드 될 것입니다. 업로드 된 이미지는 클릭하여 확대해 볼 수 있습니다.</p>
+            <h2 class="uk-modal-title">FIND IMAGE 이용 안내</h2>
+            <p>돋보기 클릭 후 원하는 사진 이름을 검색합니다. enter 키를 누르면 검색 단어와 연관된 이미지가 업로드 될 것입니다. 업로드 된 이미지는 클릭하면 확대하여 볼 수 있습니다.</p>
         </div>
     </div>
     <!-- header -->
@@ -32,8 +32,8 @@
         </div>
         <div class="nav-overlay uk-navbar-left uk-flex-1" hidden>
             <div class="uk-navbar-item uk-width-expand">
-                <form class="uk-search uk-search-navbar uk-width-1-1">
-                    <input class="uk-search-input" id="searchInput" type="search" placeholder="Search..." onkeyup="onKeyDown()"; autofocus>
+                <form class="uk-search uk-search-navbar uk-width-1-1" onsubmit="return false;">
+                    <input class="uk-search-input" id="searchInput" type="search" placeholder="Search..." onKeyDown="return searchImage(event);" autofocus>
                 </form>
             </div>
             <a class="uk-navbar-toggle" uk-close uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>

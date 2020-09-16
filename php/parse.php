@@ -2,8 +2,8 @@
 
   $text = urlencode($_GET["text"]);
   $display = urlencode($_GET["display"]);
-  $client_id = "nN7WRhiuLLysXzG1oF_b";
-  $client_secret = "QsbIdAG1hl";
+  $client_id = "vXuvFw0gWi_MVecaKfmZ";
+  $client_secret = "wvJvb1UkQT";
 //   $encText = urlencode("네이버오픈API");
 
 
